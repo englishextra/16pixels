@@ -3,6 +3,11 @@
 CSS rules for consistent 16px based typography (works with or without
 Gridpak)
 
+The demo here
+<http://shimansky.biz/libs/16pixels/shimansky.biz/index.html>
+
+Will be moved to GitHub pages soon
+
 ## Authors
 
 **Serguei Shimansky**

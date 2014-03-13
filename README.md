@@ -24,12 +24,6 @@ The demo: <http://englishextra.github.io/libs/16pixels/>
 		</body>
 	</html>
 
-## Authors
-
-**Serguei Shimansky**
-
-[https://github.com/englishextra https://bitbucket.org/englishextra][]
-
 ## Copyright
 
 Copyright (c) 2006-2014 Serguei Shimansky, <englishextra@yandex.ru>

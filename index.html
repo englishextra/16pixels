@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<title>16px Typography CSS</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale =1.0, user-scalable= no" />
+		<title>16pixels Typography CSS Demo Page</title>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,cyrillic" />
-		<link rel="stylesheet" href="css/16pixels.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/16pixels/0.1/16pixels.min.css" />
 		<style>
-			html, body {
+			/*!
+			* custom
+			*/
+			html,
+			body {
 				height: 100%;
 			}
 			body {
@@ -60,9 +66,9 @@
 				box-sizing: border-box;
 			}
 			/* * {
-			 -webkit-font-smoothing: antialiased;
-			 font-smoothing: antialiased;
-			 } */
+			-webkit-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+			} */
 			table.respond {
 				width: auto;
 			}
@@ -71,7 +77,115 @@
 				border: 0px solid transparent !important;
 			}
 			/*!
-			 * gridpak
+			 * 12 columns
+			 * 24px column padding
+			 * 0px gutter
+			 * 768px-769px breakpoint
+			 */
+			/*!
+			 * Gridpak Beta CSS
+			 *
+			 * Generator - http://gridpak.com/
+			 * Created by @erskinedesign
+			 */
+			/* Reusable column setup */
+			.col {
+				border: 0px solid rgba(0,0,0,0);
+				float: left;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				-moz-background-clip: padding-box !important;
+				-webkit-background-clip: padding-box !important;
+				background-clip: padding-box !important;
+			}
+				/* 1. 1 Column Grid 0px - 759px
+				-----------------------------------------------------------------------------
+				Span 1:    100%
+				----------------------------------------------------------------------------- */
+			@media screen and (min-width: 0px) and (max-width: 768px) {
+				.col {
+					margin-left: 0%;
+					padding: 0 24px;
+				}
+				.row .col:first-child {
+					margin-left: 0;
+				}
+					/*
+					Add your semantic classnames in alongside their corresponding spans here. e.g.
+					.span_3,
+					.my_semantic_class_name {
+						...
+					}
+					*/
+				.span_1 {
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+				/* 2. 12 Column Grid 760px - Infinity
+				-----------------------------------------------------------------------------
+				Span 1:    8.33333333333%
+				Span 2:    16.6666666667%
+				Span 3:    25.0%
+				Span 4:    33.3333333333%
+				Span 5:    41.6666666667%
+				Span 6:    50.0%
+				Span 7:    58.3333333333%
+				Span 8:    66.6666666667%
+				Span 9:    75.0%
+				Span 10:    83.3333333333%
+				Span 11:    91.6666666667%
+				Span 12:    100%
+				----------------------------------------------------------------------------- */
+			@media screen and (min-width: 769px) {
+				.col {
+					margin-left: 0%;
+					padding: 0 24px;
+				}
+				.row .col:first-child {
+					margin-left: 0;
+				}
+				.span_1 {
+					width: 8.33333333333%;
+				}
+				.span_2 {
+					width: 16.6666666667%;
+				}
+				.span_3 {
+					width: 25.0%;
+				}
+				.span_4 {
+					width: 33.3333333333%;
+				}
+				.span_5 {
+					width: 41.6666666667%;
+				}
+				.span_6 {
+					width: 50.0%;
+				}
+				.span_7 {
+					width: 58.3333333333%;
+				}
+				.span_8 {
+					width: 66.6666666667%;
+				}
+				.span_9 {
+					width: 75.0%;
+				}
+				.span_10 {
+					width: 83.3333333333%;
+				}
+				.span_11 {
+					width: 91.6666666667%;
+				}
+				.span_12 {
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+			/*!
+			 * fixes
 			 */
 			.row:after {
 				display: block;
@@ -94,7 +208,8 @@
 				-webkit-background-clip: padding-box !important;
 				background-clip: padding-box !important;
 			}
-			.cf:before, .cf:after {
+			.cf:before,
+			.cf:after {
 				content: "";
 				display: table;
 			}
@@ -104,64 +219,31 @@
 			.cf {
 				*zoom: 1;
 			}
-			.container {
-				clear: both;
-				margin: 0 auto;
-				max-width: 960px;
-				padding: 0 0 24px 0;
+			@media screen and (min-width: 0px) and (max-width: 768px) {
+				.container {
+					clear: both;
+					max-width: 100%;
+					margin: 0 auto;
+					padding: 0 0 24px 0;
+				}
+				.col {
+					border-left-width: 0px;
+					float: none;
+				}
 			}
-			.row {
-				margin-left: -0px;
+			@media screen and (min-width: 769px) {
+				.container {
+					clear: both;
+					max-width: 760px;
+					margin: 0 auto;
+					padding: 0 0 24px 0;
+				}
+				.col {
+					border-left-width: 0px;
+				}
 			}
-			.col {
-				border-left-width: 0px;
-				padding: 0 24px;
-			}
-			.span_1 {
-				width: 8.33333333333%;
-			}
-			.span_2 {
-				width: 16.6666666667%;
-			}
-			.span_3 {
-				width: 25.0%;
-			}
-			.span_4 {
-				width: 33.3333333333%;
-			}
-			.span_5 {
-				width: 41.6666666667%;
-			}
-			.span_6 {
-				width: 50.0%;
-			}
-			.span_7 {
-				width: 58.3333333333%;
-			}
-			.span_8 {
-				width: 66.6666666667%;
-			}
-			.span_9 {
-				width: 75.0%;
-			}
-			.span_10 {
-				width: 83.3333333333%;
-			}
-			.span_11 {
-				width: 91.6666666667%;
-			}
-			.span_12 {
-				margin-left: 0;
-				width: 100%;
-			}
-			.col img {
-				max-width: 100%;
-			}
-			.col .swatch {
-				display: inline-block;
-				width: 30px;
-				height: 1em;
-				margin: 0 10px 0 0;
+			.footer a {
+				color: inherit;
 			}
 			.badge {
 				position: absolute;
@@ -190,9 +272,9 @@
 				-webkit-transform-origin: 50% 100%;
 				-ms-transform-origin: 50% 100%;
 				transform-origin: 50% 100%;
-				-webkit-transform: rotate(45deg)translateY(-1em);
-				-ms-transform: rotate(45deg)translateY(-1em);
-				transform: rotate(45deg)translateY(-1em);
+				-webkit-transform: rotate(45deg) translateY(-1em);
+				-ms-transform: rotate(45deg) translateY(-1em);
+				transform: rotate(45deg) translateY(-1em);
 			}
 			.badge a:hover {
 				background: #568ec6;
@@ -208,10 +290,94 @@
 				background: #FE4C5A;
 			}
 			/*!
-			 * tomorrow-night-eighties.fixed.min.css
-			 */
-			.pln {color: #cccccc;}@media screen {.str {color: #99cc99;}.kwd {color: #cc99cc;}.com {color: #999999;}.typ {color: #6699cc;}.lit {color: #f99157;}.pun {color: #cccccc;}.opn {color: #cccccc;}.clo {color: #cccccc;}.tag {color: #f2777a;}.atn {color: #f99157;}.atv {color: #66cccc;}.dec {color: #f99157;}.var {color: #f2777a;}.fun {color: #6699cc;}}@media print, projection {.str {color: #006600;}.kwd {color: #006;font-weight: bold;}.com {color: #600;font-style: italic;}.typ {color: #404;font-weight: bold;}.lit {color: #004444;}.pun,.opn,.clo {color: #444400;}.tag {color: #006;font-weight: bold;}.atn {color: #440044;}.atv {color: #006600;}}ol.linenums {margin-top: 0;margin-bottom: 0;}
+			* tomorrow-night-eighties.fixed.min.css
+			*/
+			.pln {
+				color: #CCC;
+			}
+			@media screen {
+				.str {
+					color: #99CC99;
+				}
+				.kwd {
+					color: #CC99CC;
+				}
+				.com {
+					color: #999999;
+				}
+				.typ {
+					color: #6699CC;
+				}
+				.lit {
+					color: #F99157;
+				}
+				.pun {
+					color: #CCC;
+				}
+				.opn {
+					color: #CCC;
+				}
+				.clo {
+					color: #CCC;
+				}
+				.tag {
+					color: #F2777A;
+				}
+				.atn {
+					color: #F99157;
+				}
+				.atv {
+					color: #66CCCC;
+				}
+				.dec {
+					color: #F99157;
+				}
+				.var {
+					color: #F2777A;
+				}
+				.fun {
+					color: #6699CC;
+				}
+			}
+			@media print, projection {
+				.str {
+					color: #006600;
+				}
+				.kwd {
+					color: #006;
+					font-weight: bold;
+				}
+				.com {
+					color: #600;
+					font-style: italic;
+				}
+				.typ {
+					color: #404;
+					font-weight: bold;
+				}
+				.lit {
+					color: #004444;
+				}
+				.pun, .opn, .clo {
+					color: #444400;
+				}
+				.tag {
+					color: #006;
+					font-weight: bold;
+				}
+				.atn {
+					color: #440044;
+				}
+				.atv {
+					color: #006600;
+				}
+			}
+			ol.linenums {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
 		</style>
+		<script src="//cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
@@ -223,303 +389,179 @@
 				<div class="row">
 					<div class="col span_12 cf">
 						<h1>Heading&#160;1</h1>
+						<div class="hr"></div>
+						<!-- <p>
+						The text below seems to be chaotic, but it is mixed up in this manner on purpose, to have a clear picture how margins, paddings and fonts are set up. Handy for pages with rich text content.
+						</p> -->
 						<p>
-							The text below seems to be chaotic, but it is mixed up in this manner on purpose, to have a clear picture how margins, paddings and fonts are set up. Handy for pages with rich text content.
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
-						<pre class="prettyprint"><code class="language-plain">&lt;div class=&quot;col&quot;&gt;<br/>&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br/>&#160;&#160;&#160;&#160;&lt;p&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The text below seems to be chaotic, but it is mixed up in this manner on purpose, to have a clear picture how margins, paddings and fonts are set up. Handy for pages with rich text content.<br/>&#160;&#160;&#160;&#160;&lt;/p&gt;<br/>&lt;/div&gt;</code></pre>
+						<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&#160;&#160;&#160;&#160;&lt;head&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;16pixels Typography CSS Demo Page&lt;/title&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,cyrillic&quot; /&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/16pixels/0.1/16pixels.min.css&quot; /&gt;<br/>&#160;&#160;&#160;&#160;&lt;/head&gt;<br/>&#160;&#160;&#160;&#160;&lt;body&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br/>&#160;&#160;&#160;&#160;&lt;/body&gt;<br/>&lt;/html&gt;</code></pre>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							<a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
 						<h2>Heading&#160;2</h2>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
-						<h2>Heading&#160;2</h2>
 						<table class="respond">
+							<caption>
+								Table Caption
+							</caption>
 							<thead>
 								<tr>
-									<th>Table Header</th><th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
 								</tr>
 								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
+								</tr>
+								<tr>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
+								</tr>
+								<tr>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
 								</tr>
 							</tbody>
+							<tfoot>
+								<tr>
+									<th>Table Footer</th>
+									<th>Table Footer</th>
+								</tr>
+							</tfoot>
 						</table>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<h2>Heading&#160;2</h2>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
-						<h2>Heading&#160;2</h2>
 						<blockquote>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</blockquote>
-						<h2>Heading&#160;2</h2>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
 						<h3>Heading&#160;3</h3>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
-						<h3>Heading&#160;3</h3>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
+						<dl>
+							<dt>
+								Definition List Title
+							</dt>
+							<dd>
+								Definition List Text
+							</dd>
+							<dt>
+								Definition List Title
+							</dt>
+							<dd>
+								Definition List Text
+							</dd>
+							<dt>
+								Definition List Title
+							</dt>
+							<dd>
+								Definition List Text
+							</dd>
+						</dl>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<table class="respond">
-							<thead>
-								<tr>
-									<th>Table Header</th><th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-								<tr>
-									<td>The European languages are members of the same family.</td><td>The European languages are members of the same family.</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
 						<h4>Heading&#160;4</h4>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
+						<ul>
+							<li>
+								Unordered List Text
+							</li>
+							<li>
+								Unordered List Text
+							</li>
+							<li>
+								Unordered List Text
+							</li>
+						</ul>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
 						<h5>Heading&#160;5</h5>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
+						<ol>
+							<li>
+								Ordered List Text
+							</li>
+							<li>
+								Ordered List Text
+							</li>
+							<li>
+								Ordered List Text
+							</li>
+						</ol>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
 						<h6>Heading&#160;6</h6>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<blockquote>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</blockquote>
-						<dl>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								The European languages are members of the same family
-							</dd>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								The European languages are members of the same family
-							</dd>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								The European languages are members of the same family
-							</dd>
-						</dl>
-						<h2>Heading&#160;2</h2>
-						<dl>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								The European languages are members of the same family
-							</dd>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								The European languages are members of the same family
-							</dd>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								The European languages are members of the same family
-							</dd>
-						</dl>
-						<ul>
-							<li>
-								The European languages are members of the same family
-							</li>
-							<li>
-								The European languages are members of the same family
-							</li>
-							<li>
-								The European languages are members of the same family
-							</li>
-						</ul>
-						<ol>
-							<li>
-								The European languages are members of the same family
-							</li>
-							<li>
-								The European languages are members of the same family
-							</li>
-							<li>
-								The European languages are members of the same family
-							</li>
-						</ol>
-						<blockquote>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</blockquote>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<blockquote>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</blockquote>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<h2>Heading&#160;2</h2>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<pre class="prettyprint"><code class="language-plain">&lt;span id=&quot;load_quote&quot;&gt;&lt;/span&gt;</code></pre>
-						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
-						</p>
-						<h2><a href="#">Heading&#160;2 as link</a></h2>
-						<p>
-							<img class="framed reflow390x180" src="http://placehold.it/380x190" alt="380x190" />
+							<img src="http://placehold.it/380x190" alt="380x190" />
 						</p>
 						<p>
-							The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span_12 cf">
+						<div>
+							<form action="#" method="post">
+								<input type="hidden" name="id" value="" />
+								<fieldset>
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName" name="firstName" value=""/>
+								</fieldset>
+								<fieldset>
+									<label for="lastName">Last Name</label>
+									<input type="text" id="lastName" name="lastName" value=""/>
+								</fieldset>
+								<fieldset>
+									<label for="email">Email Address</label>
+									<input type="text" id="email" name="email" value=""/>
+								</fieldset>
+								<fieldset>
+									<label for="field-1">What&#x27;s on your mind?</label>
+									<textarea id="field-1" name="field-1" rows="10" cols="50"></textarea>
+								</fieldset>
+								<fieldset>
+									<input type="submit" value="Submit"/>
+								</fieldset>
+							</form>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+						</p>
 						<div class="hr"></div>
 					</div>
 				</div>
-				<a href="https://github.com/englishextra/16pixels"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_red_aa0000.png" alt="Fork me on GitHub" data-canonical-src="img/forkme_right_red_aa0000.png"></a>
+				<div class="row">
+					<div class="col span_12 textcenter footer cf">
+						<p><span class="smaller">&#169;&#160;<a href="https://github.com/englishextra/16pixels">github.com/englishextra</a>, 2014</span></p>
+					</div>
+				</div>
+				<a href="https://github.com/englishextra/16pixels"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 			</div>
 		</div>
+		<script src="https://raw.github.com/englishextra/early.js/master/js/early.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
 		<script>
 			(function(a){"undefined"!==typeof a.prettyPrint&&prettyPrint()}(window));
-		</script>
 	</body>
 </html>

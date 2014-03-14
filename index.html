@@ -57,7 +57,8 @@
 			p:last-child {
 				margin-bottom: 0;
 			}
-			strong, .bolder {
+			strong,
+			.bolder {
 				font-weight: 600;
 			}
 			*, *:after, *::before {
@@ -560,9 +561,8 @@
 			</div>
 		</div>
 		<script src="https://raw.github.com/englishextra/early.js/master/js/early.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
 		<script>
-			(function(a){"undefined"!==typeof a.prettyPrint&&prettyPrint()}(window));
+			("undefined"!==typeof sbizIsMobileBrowser&&sbizIsMobileBrowser)||function(a){"undefined"!==typeof a.addEvent&&addEvent(a,"load",function(){yepnope.injectJs("//cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js",function(){"undefined"!==typeof a.prettyPrint&&prettyPrint()},{charset:"utf-8"},5E3)}())}(window);
 		</script>
 	</body>
 </html>

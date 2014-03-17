@@ -27,7 +27,6 @@
 .col p.address {
 	font-size: 13px;
 	line-height: 19px;
-	font-weight: 400;
 	font-style: italic;
 	margin-right: 0;
 }
@@ -41,7 +40,6 @@
 	line-height: 18px;
 }
 .col p.blockquote {
-	font-weight: 400;
 	font-style: italic;
 	margin-right: 0;
 }
@@ -55,30 +53,25 @@
 .col h2 {
 	font-size: 20px;
 	line-height: 21px;
-	font-weight: 600;
 	color: inherit;
 	padding: 0;
 }
 .col h3 {
-	font-weight: 600;
 	font-style: italic;
 	color: inherit;
 	padding: 0;
 }
 .col h4 {
-	font-weight: 600;
 	color: inherit;
 	padding: 0;
 }
 .col h5 {
-	font-weight: 600;
 	font-variant: small-caps;
 	text-decoration: underline;
 	color: inherit;
 	padding: 0;
 }
 .col h6 {
-	font-weight: 400;
 	font-variant: small-caps;
 	text-decoration: underline;
 	color: inherit;
@@ -92,9 +85,6 @@
 .col.span_4 h3 {
 	font-size: 16px;
 	line-height: 18px;
-}
-.col p {
-	font-weight: 400;
 }
 .col caption,
 .col label,
@@ -128,10 +118,6 @@
 	font-size: 18px;
 	line-height: 27px;
 }
-.col dl dt {
-	font-weight: 600;
-	font-style: italic;
-}
 .col h3,
 .col.span_2 h2,
 .col.span_3 h2,
@@ -139,12 +125,9 @@
 	font-size: 18px;
 	line-height: 19px;
 }
-.col dl dt {
-	font-size: 16px;
-	line-height: 24px;
-}
 .col p,
 .col p.blockquote,
+.col dl dt,
 .col dl dd,
 .col ul li,
 .col ol li,
@@ -160,21 +143,41 @@
 	font-size: 14px;
 	line-height: 21px;
 }
-.col dl dd {
+.col h6,
+.col address,
+.col p,
+.col p.address,
+.col p.blockquote,
+.col dl dd,
+.col ul li,
+.col ol li,
+.col table td,
+.col caption,
+.col input[type^="text"],
+.col select,
+.col textarea,
+.col label {
 	font-weight: 400;
+}
+.col h2,
+.col h3,
+.col h4,
+.col h5,
+.col dl dt,
+.col table th,
+.col button,
+.col input[type="button"],
+.col input[type="reset"],
+.col input[type="submit"] {
+	font-weight: 600;
 }
 .col ul {
 	list-style: disc outside;
 }
-.col ul li {
-	font-weight: 400;
-}
 .col ol {
 	list-style: decimal inside;
 }
-.col ol li {
-	font-weight: 400;
-}
+.col dl dt,
 .col blockquote {
 	font-style: italic;
 }
@@ -243,7 +246,6 @@
 	line-height: 19px;
 }
 .col table th {
-	font-weight: 600;
 	color: #FFF;
 	background: #5D5D5D;
 }
@@ -256,11 +258,9 @@
 	text-decoration: underline;
 }
 .col table td {
-	font-weight: 400;
 	color: inherit;
 }
 .col caption {
-	font-weight: 400;
 	font-style: italic;
 	color: inherit;
 }
@@ -284,7 +284,6 @@
 .col textarea {
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 400;
 	color: inherit;
 	background: #F4F4F4;
 	background-size: 24px 12px;
@@ -331,7 +330,6 @@
 .col input[type="submit"] {
 	width: 9em;
 	font-size: 14px;
-	font-weight: 600;
 	font-family: inherit;
 	line-height: 24px;
 	color: #FFF;
@@ -365,7 +363,6 @@
 }
 .col label {
 	display: block;
-	font-weight: 400;
 	font-style: italic;
 	margin-bottom: 2px;
 }

@@ -64,10 +64,6 @@ p:first-child {
 p:last-child {
 	margin-bottom: 0;
 }
-strong,
-.bolder {
-	font-weight: 600;
-}
 *, *:after, *::before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -84,18 +80,9 @@ font-smoothing: antialiased;
 	font-weight: 300;
 	margin-top: 0 !important;
 }
-.col p {
-	word-break: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	-webkit-hyphenate-before: 2;
-	-webkit-hyphenate-after: 3;
-	hyphenate-lines: 3;
-}
 .container {
 	max-width: 720px;
-	padding: 16px;
+	padding: 40px 16px;
 	margin: 0 auto;
 }
 /*!
@@ -197,14 +184,14 @@ ol.linenums {
 		<![endif]-->
 	</head>
 	<body>
-		<div id="page">
-			<div class="container">
+		<div id="page" role="document">
+			<div class="container" role="main">
 				<div class="col">
 					<h1>Heading&#160;1</h1>
 					<div class="hr"></div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-					</p>
+					<p>You will like it: <a href="https://github.com/englishextra/typeboost.css">Typeboost.css</a> &#8212; A set of CSS rules to ensure consistent and responsive typography. Just paste your HTML and include the CSS.</p>
+					<p>While this project will be helpful in case you want to setup a quick web page with consistent 16-pixels-based layout. Wrap your HTML content with class &#171;col&#187; and you are done.</p>
+					<h2>The Setup</h2>
 					<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en&quot;&gt;<br />&#160;&#160;&#160;&#160;&lt;head&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;16pixels Typography CSS Demo Page&lt;/title&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,latin-ext,cyrillic&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/16pixels/0.1/16pixels.min.css&quot; /&gt;<br />&#160;&#160;&#160;&#160;&lt;/head&gt;<br />&#160;&#160;&#160;&#160;&lt;body&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br />&#160;&#160;&#160;&#160;&lt;/body&gt;<br />&lt;/html&gt;</code></pre>
 					<p>
 						<a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,

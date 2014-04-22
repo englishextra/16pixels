@@ -1,9 +1,6 @@
 /*!
  * 16pixels v1.0
  * github.com/englishextra/16pixels
- * bitbucket.org/englishextra/16pixels
- * pastebin.com/xAzjZ6aR
- * codepen.io/englishextra/pen/avIzi
  */
 .col div,
 .col span,
@@ -115,7 +112,7 @@
 	content: none;
 }
 .col a {
-	color: #2483AA;
+	color: #106EB4;
 	text-decoration: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -123,7 +120,7 @@
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #C71939;
+	color: #299CD9;
 }
 .col h2 a {
 	font-weight: inherit;
@@ -270,6 +267,8 @@
 .col h3,
 .col h4,
 .col h5,
+.col strong,
+.col .bolder,
 .col dl dt,
 .col table th,
 .col button,
@@ -473,7 +472,7 @@
 	margin-left: auto;
 }
 .col dl dd:before {
-	content: "\2014\00a0\00a0";
+	content: "\2014\00a0";
 }
 .col address,
 .col p.address,
@@ -849,7 +848,7 @@
 }
 .col .highlight {
 	font-weight: bolder;
-	color: #C71939;
+	color: #299CD9;
 }
 .col .fade {
 	opacity: 1;

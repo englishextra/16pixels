@@ -154,7 +154,6 @@
 .col h1 {
 	font-size: 36px;
 	line-height: 37px;
-	font-weight: 300;
 	color: inherit;
 	padding: 0;
 }
@@ -197,7 +196,6 @@
 .col caption,
 .col label,
 .col p.smaller,
-.col pre,
 .col table td,
 .col table th,
 .col.span_2 p.blockquote,
@@ -265,8 +263,9 @@
 .col select,
 .col textarea,
 .col label {
-	font-weight: 400;
+	font-weight: normal;
 }
+.col h1,
 .col h2,
 .col h3,
 .col h4,
@@ -277,7 +276,7 @@
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
-	font-weight: 600;
+	font-weight: bolder;
 }
 .col ul {
 	list-style: disc outside;
@@ -298,7 +297,7 @@
 	overflow-x: auto;
 	color: #FFF;
 	background: #5D5D5D;
-	border: 0px solid #5D5D5D;
+	border: 0;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
@@ -326,7 +325,7 @@
 	border-spacing: 0;
 }
 .col table tr {
-	background: #FAFAFA;
+	background: #F4F4F4;
 }
 .col table tr:nth-of-type(odd) {
 	background: #F4F4F4;
@@ -340,9 +339,10 @@
 .col table td,
 .col table th {
 	padding: 5px 16px;
-	border: 0px solid #FAFAFA;
+	border: 0;
 	vertical-align: top;
 }
+.col pre,
 .col.span_2 table td,
 .col.span_3 table td,
 .col.span_4 table td,
@@ -353,8 +353,8 @@
 	line-height: 19px;
 }
 .col table th {
-	color: #FFF;
-	background: #5D5D5D;
+	color: inherit;
+	background: #E5E5E5;
 }
 .col table th a {
 	color: inherit;
@@ -373,7 +373,7 @@
 }
 .col img {
 	background-color: inherit;
-	border: 0px solid #FFF;
+	border: 0;
 	vertical-align: bottom;
 	padding: 0;
 }
@@ -400,7 +400,7 @@
 	font-family: inherit;
 }
 .col select {
-	font-family: sans-serif;
+	font-family: inherit;
 	color: #FFF;
 	background-color: #506F7C;
 }
@@ -473,7 +473,7 @@
 	margin-left: auto;
 }
 .col dl dd:before {
-	content: "\2014\00a0";
+	content: "\2014\00a0\00a0";
 }
 .col address,
 .col p.address,
@@ -833,10 +833,10 @@
 .col .phonetic {
 	font-family: Voces, Calibri, Judson, ConstructiumRegular;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 }
 .col .bolder {
-	font-weight: 600;
+	font-weight: bolder;
 }
 .col .larger {
 	font-size: 120%;
@@ -848,7 +848,7 @@
 	font-style: italic;
 }
 .col .highlight {
-	font-weight: 600;
+	font-weight: bolder;
 	color: #C71939;
 }
 .col .fade {
@@ -862,7 +862,7 @@
 }
 .col .hr {
 	height: 1px;
-	background: #F4F4F4;
+	background: #ECECEC;
 	padding: 0;
 	margin: 24px 0 0;
 }

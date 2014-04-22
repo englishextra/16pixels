@@ -4,565 +4,371 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale =1.0, user-scalable= no" />
 		<title>16pixels Typography CSS Demo Page</title>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic%7CUbuntu+Mono:400,400italic,700,700italic&amp;subset=latin,cyrillic" />
+		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic%7CUbuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,latin-ext,cyrillic" /> -->
+		<link rel="stylesheet" href="fonts/open-sans-fontfacekit/300-400-400italic-600-600italic.css" />
+		<link rel="stylesheet" href="fonts/ubuntu-mono-fontfacekit/400-400italic-700-700italic.css" />
+		<link rel="stylesheet" href="fonts/voces-fontfacekit/400.css" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
-		<link rel="stylesheet" href="1.0/css/16pixels.min.css" />
+		<link rel="stylesheet" href="0.1/css/16pixels.min.css" />
+		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css" /> -->
 		<style>
-			/*!
-			 * custom
-			 */
-			html,
-			body {
-				height: 100%;
-			}
-			body {
-				width: 100%;
-				position: relative;
-				font-size: 16px;
-				font-family: Open Sans, sans-serif;
-				font-weight: 400;
-				line-height: 1.5;
-				color: #3A3A3C;
-				background: #FFF;
-				backgound-size: 100% 100%;
-				-webkit-touch-callout: none;
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-				-webkit-text-size-adjust: none;
-				user-select: none;
-				-o-user-select: none;
-				-khtml-user-select: none;
-				-webkit-user-select: none;
-				overflow-x: hidden;
-				margin: 0;
-				padding: 0;
-			}
-			a {
-				color: inherit;
-				text-decoration: none;
-				outline: none;
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-			}
-			a:hover, a:active, a:focus {
-				outline: none;
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-			}
-			img {
-				border: 0;
-				-ms-interpolation-mode: bicubic;
-				vertical-align: bottom;
-			}
-			p:first-child {
-				margin-top: 0;
-			}
-			p:last-child {
-				margin-bottom: 0;
-			}
-			strong,
-			.bolder {
-				font-weight: 600;
-			}
-			*, *:after, *::before {
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-			/* * {
-			-webkit-font-smoothing: antialiased;
-			font-smoothing: antialiased;
-			} */
-			table.respond {
-				width: auto;
-			}
-			pre.prettyprint {
-				background: #404445 !important;
-				border: 0px solid transparent !important;
-			}
-			/*!
-			 * 12 columns
-			 * 24px column padding
-			 * 0px gutter
-			 * 768px-769px breakpoint
-			 */
-			/*!
-			 * Gridpak Beta CSS
-			 *
-			 * Generator - http://gridpak.com/
-			 * Created by @erskinedesign
-			 */
-			/* Reusable column setup */
-			.col {
-				border: 0px solid rgba(0,0,0,0);
-				float: left;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				-moz-background-clip: padding-box !important;
-				-webkit-background-clip: padding-box !important;
-				background-clip: padding-box !important;
-			}
-				/* 1. 1 Column Grid 0px - 759px
-				-----------------------------------------------------------------------------
-				Span 1:    100%
-				----------------------------------------------------------------------------- */
-			@media screen and (min-width: 0px) and (max-width: 768px) {
-				.col {
-					margin-left: 0%;
-					padding: 0 24px;
-				}
-				.row .col:first-child {
-					margin-left: 0;
-				}
-					/*
-					Add your semantic classnames in alongside their corresponding spans here. e.g.
-					.span_3,
-					.my_semantic_class_name {
-						...
-					}
-					*/
-				.span_1 {
-					margin-left: 0;
-					width: 100%;
-				}
-			}
-				/* 2. 12 Column Grid 760px - Infinity
-				-----------------------------------------------------------------------------
-				Span 1:    8.33333333333%
-				Span 2:    16.6666666667%
-				Span 3:    25.0%
-				Span 4:    33.3333333333%
-				Span 5:    41.6666666667%
-				Span 6:    50.0%
-				Span 7:    58.3333333333%
-				Span 8:    66.6666666667%
-				Span 9:    75.0%
-				Span 10:    83.3333333333%
-				Span 11:    91.6666666667%
-				Span 12:    100%
-				----------------------------------------------------------------------------- */
-			@media screen and (min-width: 769px) {
-				.col {
-					margin-left: 0%;
-					padding: 0 24px;
-				}
-				.row .col:first-child {
-					margin-left: 0;
-				}
-				.span_1 {
-					width: 8.33333333333%;
-				}
-				.span_2 {
-					width: 16.6666666667%;
-				}
-				.span_3 {
-					width: 25.0%;
-				}
-				.span_4 {
-					width: 33.3333333333%;
-				}
-				.span_5 {
-					width: 41.6666666667%;
-				}
-				.span_6 {
-					width: 50.0%;
-				}
-				.span_7 {
-					width: 58.3333333333%;
-				}
-				.span_8 {
-					width: 66.6666666667%;
-				}
-				.span_9 {
-					width: 75.0%;
-				}
-				.span_10 {
-					width: 83.3333333333%;
-				}
-				.span_11 {
-					width: 91.6666666667%;
-				}
-				.span_12 {
-					margin-left: 0;
-					width: 100%;
-				}
-			}
-			/*!
-			 * fixes
-			 */
-			.row:after {
-				display: block;
-				visibility: hidden;
-				clear: both;
-				height: 0;
-				content: ".";
-				overflow: hidden;
-				width: 0;
-				font-size: 0;
-				line-height: 0;
-			}
-			.col {
-				border: 0px solid rgba(0,0,0,0);
-				float: left;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				-moz-background-clip: padding-box !important;
-				-webkit-background-clip: padding-box !important;
-				background-clip: padding-box !important;
-			}
-			.cf:before,
-			.cf:after {
-				content: "";
-				display: table;
-			}
-			.cf:after {
-				clear: both;
-			}
-			.cf {
-				*zoom: 1;
-			}
-			@media screen and (min-width: 0px) and (max-width: 768px) {
-				.container {
-					clear: both;
-					max-width: 100%;
-					margin: 0 auto;
-					padding: 0 0 24px 0;
-				}
-				.col {
-					border-left-width: 0px;
-					float: none;
-				}
-			}
-			@media screen and (min-width: 769px) {
-				.container {
-					clear: both;
-					max-width: 760px;
-					margin: 0 auto;
-					padding: 0 0 24px 0;
-				}
-				.col {
-					border-left-width: 0px;
-				}
-			}
-			.footer a {
-				color: inherit;
-			}
-			.badge {
-				position: absolute;
-				top: 0;
-				right: 0;
-				display: none;
-				overflow: hidden;
-				visibility: hidden;
-				width: 11em;
-				height: 11em;
-				line-height: 2.5;
-				font-size: 15px;
-			}
-			.badge a {
-				position: absolute;
-				bottom: 50%;
-				right: -50%;
-				left: -50%;
-				visibility: visible;
-				background: #4b86c2;
-				-webkit-box-shadow: 0 0 1em rgba(0,0,0,.3);
-				box-shadow: 0 0 1em rgba(0,0,0,.3);
-				color: #FFF;
-				text-decoration: none;
-				text-align: center;
-				-webkit-transform-origin: 50% 100%;
-				-ms-transform-origin: 50% 100%;
-				transform-origin: 50% 100%;
-				-webkit-transform: rotate(45deg) translateY(-1em);
-				-ms-transform: rotate(45deg) translateY(-1em);
-				transform: rotate(45deg) translateY(-1em);
-			}
-			.badge a:hover {
-				background: #568ec6;
-			}
-			.badge a {
-				background: #44BA67;
-				color: #FFF;
-				-webkit-box-shadow: none;
-				box-shadow: none;
-			}
-			.badge a:hover {
-				background: #FE4C5A;
-				background: #FE4C5A;
-			}
-			/*!
-			* tomorrow-night-eighties.fixed.min.css
-			*/
-			.pln {
-				color: #CCC;
-			}
-			@media screen {
-				.str {
-					color: #99CC99;
-				}
-				.kwd {
-					color: #CC99CC;
-				}
-				.com {
-					color: #999999;
-				}
-				.typ {
-					color: #6699CC;
-				}
-				.lit {
-					color: #F99157;
-				}
-				.pun {
-					color: #CCC;
-				}
-				.opn {
-					color: #CCC;
-				}
-				.clo {
-					color: #CCC;
-				}
-				.tag {
-					color: #F2777A;
-				}
-				.atn {
-					color: #F99157;
-				}
-				.atv {
-					color: #66CCCC;
-				}
-				.dec {
-					color: #F99157;
-				}
-				.var {
-					color: #F2777A;
-				}
-				.fun {
-					color: #6699CC;
-				}
-			}
-			@media print, projection {
-				.str {
-					color: #006600;
-				}
-				.kwd {
-					color: #006;
-					font-weight: bold;
-				}
-				.com {
-					color: #600;
-					font-style: italic;
-				}
-				.typ {
-					color: #404;
-					font-weight: bold;
-				}
-				.lit {
-					color: #004444;
-				}
-				.pun, .opn, .clo {
-					color: #444400;
-				}
-				.tag {
-					color: #006;
-					font-weight: bold;
-				}
-				.atn {
-					color: #440044;
-				}
-				.atv {
-					color: #006600;
-				}
-			}
-			ol.linenums {
-				margin-top: 0;
-				margin-bottom: 0;
-			}
+/*!
+ * custom
+ */
+html {
+	font-size: 100%;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	width: 100%;
+	position: relative;
+	font-size: 16px;
+	font-family: Open Sans, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #3A3A3C;
+	background: #FFF;
+	backgound-size: 100% 100%;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:hover, a:active, a:focus {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: bottom;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+strong,
+.bolder {
+	font-weight: 600;
+}
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* * {
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+} */
+/*!
+ * custom
+ */
+.col h1 {
+	font-weight: 300;
+	margin-top: 0 !important;
+}
+.col p {
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	-webkit-hyphenate-before: 2;
+	-webkit-hyphenate-after: 3;
+	hyphenate-lines: 3;
+}
+.container {
+	max-width: 720px;
+	padding: 16px;
+	margin: 0 auto;
+}
+/*!
+* tomorrow-night-eighties.fixed.min.css
+*/
+pre.prettyprint {
+	background: #404445 !important;
+	border: 0px solid transparent !important;
+}
+.pln {
+	color: #CCC;
+}
+@media screen {
+	.str {
+		color: #99CC99;
+	}
+	.kwd {
+		color: #CC99CC;
+	}
+	.com {
+		color: #999999;
+	}
+	.typ {
+		color: #6699CC;
+	}
+	.lit {
+		color: #F99157;
+	}
+	.pun {
+		color: #CCC;
+	}
+	.opn {
+		color: #CCC;
+	}
+	.clo {
+		color: #CCC;
+	}
+	.tag {
+		color: #F2777A;
+	}
+	.atn {
+		color: #F99157;
+	}
+	.atv {
+		color: #66CCCC;
+	}
+	.dec {
+		color: #F99157;
+	}
+	.var {
+		color: #F2777A;
+	}
+	.fun {
+		color: #6699CC;
+	}
+}
+@media print, projection {
+	.str {
+		color: #006600;
+	}
+	.kwd {
+		color: #006;
+		font-weight: bold;
+	}
+	.com {
+		color: #600;
+		font-style: italic;
+	}
+	.typ {
+		color: #404;
+		font-weight: bold;
+	}
+	.lit {
+		color: #004444;
+	}
+	.pun, .opn, .clo {
+		color: #444400;
+	}
+	.tag {
+		color: #006;
+		font-weight: bold;
+	}
+	.atn {
+		color: #440044;
+	}
+	.atv {
+		color: #006600;
+	}
+}
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 		</style>
-		<script src="//cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
 		<!--[if lt IE 9]>
-		<script src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+		<script src="http://cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 		<![endif]-->
 	</head>
 	<body>
 		<div id="page">
 			<div class="container">
-				<div class="row">
-					<div class="col span_12 cf">
-						<h1>Heading&#160;1</h1>
-						<div class="hr"></div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&#160;&#160;&#160;&#160;&lt;head&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;16pixels Typography CSS Demo Page&lt;/title&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,cyrillic&quot; /&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/16pixels/0.1/16pixels.min.css&quot; /&gt;<br/>&#160;&#160;&#160;&#160;&lt;/head&gt;<br/>&#160;&#160;&#160;&#160;&lt;body&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br/>&#160;&#160;&#160;&#160;&lt;/body&gt;<br/>&lt;/html&gt;</code></pre>
-						<p>
-							<a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<blockquote>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</blockquote>
-						<h2>Heading&#160;2</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<table class="respond">
-							<caption>
-								Table Caption
-							</caption>
-							<thead>
-								<tr>
-									<th>Table Header</th>
-									<th>Table Header</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Table Cell Text</td>
-									<td>Table Cell Text</td>
-								</tr>
-								<tr>
-									<td>Table Cell Text</td>
-									<td>Table Cell Text</td>
-								</tr>
-								<tr>
-									<td>Table Cell Text</td>
-									<td>Table Cell Text</td>
-								</tr>
-								<tr>
-									<td>Table Cell Text</td>
-									<td>Table Cell Text</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th>Table Footer</th>
-									<th>Table Footer</th>
-								</tr>
-							</tfoot>
-						</table>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<blockquote>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</blockquote>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<h3>Heading&#160;3</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<dl>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								Definition List Text
-							</dd>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								Definition List Text
-							</dd>
-							<dt>
-								Definition List Title
-							</dt>
-							<dd>
-								Definition List Text
-							</dd>
-						</dl>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<h4>Heading&#160;4</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<ul>
-							<li>
-								Unordered List Text
-							</li>
-							<li>
-								Unordered List Text
-							</li>
-							<li>
-								Unordered List Text
-							</li>
-						</ul>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<h5>Heading&#160;5</h5>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<ol>
-							<li>
-								Ordered List Text
-							</li>
-							<li>
-								Ordered List Text
-							</li>
-							<li>
-								Ordered List Text
-							</li>
-						</ol>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<h6>Heading&#160;6</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<p>
-							<img src="http://placehold.it/380x190" alt="380x190" />
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<div>
-							<form action="#" method="post">
-								<input type="hidden" name="id" value="" />
-								<fieldset>
-									<label for="firstName">First Name</label>
-									<input type="text" id="firstName" name="firstName" value=""/>
-								</fieldset>
-								<fieldset>
-									<label for="lastName">Last Name</label>
-									<input type="text" id="lastName" name="lastName" value=""/>
-								</fieldset>
-								<fieldset>
-									<label for="email">Email Address</label>
-									<input type="text" id="email" name="email" value=""/>
-								</fieldset>
-								<fieldset>
-									<label for="field-1">What&#x27;s on your mind?</label>
-									<textarea id="field-1" name="field-1" rows="10" cols="50"></textarea>
-								</fieldset>
-								<fieldset>
-									<input type="submit" value="Submit"/>
-								</fieldset>
-							</form>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-						</p>
-						<div class="hr"></div>
+				<div class="col">
+					<h1>Heading&#160;1</h1>
+					<div class="hr"></div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en&quot;&gt;<br />&#160;&#160;&#160;&#160;&lt;head&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;16pixels Typography CSS Demo Page&lt;/title&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,latin-ext,cyrillic&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/16pixels/0.1/16pixels.min.css&quot; /&gt;<br />&#160;&#160;&#160;&#160;&lt;/head&gt;<br />&#160;&#160;&#160;&#160;&lt;body&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br />&#160;&#160;&#160;&#160;&lt;/body&gt;<br />&lt;/html&gt;</code></pre>
+					<p>
+						<a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<blockquote>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</blockquote>
+					<h2>Heading&#160;2</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<table class="respond">
+						<caption>
+							Table Caption
+						</caption>
+						<thead>
+							<tr>
+								<th>Table Header</th>
+								<th>Table Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Table Footer</th>
+								<th>Table Footer</th>
+							</tr>
+						</tfoot>
+					</table>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<blockquote>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</blockquote>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h3>Heading&#160;3</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<dl>
+						<dt>
+							Definition List Title
+						</dt>
+						<dd>
+							Definition List Text
+						</dd>
+						<dt>
+							Definition List Title
+						</dt>
+						<dd>
+							Definition List Text
+						</dd>
+						<dt>
+							Definition List Title
+						</dt>
+						<dd>
+							Definition List Text
+						</dd>
+					</dl>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h4>Heading&#160;4</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<ul>
+						<li>
+							Unordered List Text
+						</li>
+						<li>
+							Unordered List Text
+						</li>
+						<li>
+							Unordered List Text
+						</li>
+					</ul>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h5>Heading&#160;5</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<ol>
+						<li>
+							Ordered List Text
+						</li>
+						<li>
+							Ordered List Text
+						</li>
+						<li>
+							Ordered List Text
+						</li>
+					</ol>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h6>Heading&#160;6</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<p>
+						<img src="http://placehold.it/380x190" alt="380x190" />
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<div>
+						<form action="#" method="post">
+							<input type="hidden" name="id" value="" />
+							<fieldset>
+								<label for="firstName">First Name</label>
+								<input type="text" id="firstName" name="firstName" value=""/>
+							</fieldset>
+							<fieldset>
+								<label for="lastName">Last Name</label>
+								<input type="text" id="lastName" name="lastName" value=""/>
+							</fieldset>
+							<fieldset>
+								<label for="email">Email Address</label>
+								<input type="text" id="email" name="email" value=""/>
+							</fieldset>
+							<fieldset>
+								<label for="field-1">What&#x27;s on your mind?</label>
+								<textarea id="field-1" name="field-1" rows="10" cols="50"></textarea>
+							</fieldset>
+							<fieldset>
+								<input type="submit" value="Submit"/>
+							</fieldset>
+						</form>
 					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<div class="hr"></div>
+					<p><span class="smaller">&#169;&#160;<a href="https://github.com/englishextra/16pixels">github.com/englishextra</a>, 2014</span></p>
 				</div>
-				<div class="row">
-					<div class="col span_12 textcenter footer cf">
-						<p><span class="smaller">&#169;&#160;<a href="https://github.com/englishextra/16pixels">github.com/englishextra</a>, 2014</span></p>
-					</div>
-				</div>
-				<a href="https://github.com/englishextra/16pixels"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 			</div>
+			<a href="https://github.com/englishextra/16pixels"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 		</div>
-		<script src="https://raw.github.com/englishextra/early.js/master/1.0/js/early.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
 		<script>
-			("undefined"!==typeof earlyIsMobileBrowser&&earlyIsMobileBrowser)||function(a){"undefined"!==typeof a.addEvent&&addEvent(a,"load",function(){yepnope.injectJs("http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js",function(){"undefined"!==typeof a.prettyPrint&&prettyPrint()},{charset:"utf-8"},5E3)}())}(window);
+			(function(a){a&&prettyPrint()}(window.prettyPrint));
 		</script>
 	</body>
 </html>

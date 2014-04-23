@@ -112,7 +112,7 @@
 	content: none;
 }
 .col a {
-	color: #106EB4;
+	color: #2980B9;
 	text-decoration: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -120,7 +120,7 @@
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #299CD9;
+	color: #E74C3C;
 }
 .col h2 a {
 	font-weight: inherit;
@@ -190,6 +190,7 @@
 	font-size: 16px;
 	line-height: 18px;
 }
+.col pre,
 .col caption,
 .col label,
 .col p.smaller,
@@ -240,12 +241,6 @@
 	font-size: 16px;
 	line-height: 24px;
 }
-.col.span_2 dl dt,
-.col.span_3 dl dt,
-.col.span_4 dl dt {
-	font-size: 14px;
-	line-height: 21px;
-}
 .col h6,
 .col address,
 .col p,
@@ -288,7 +283,7 @@
 	font-style: italic;
 }
 .col pre {
-	font-family: "Ubuntu Mono", Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+	font-family: monospace;
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: inherit;
@@ -303,7 +298,7 @@
 	padding: 17px 24px;
 }
 .col pre code {
-	font-family: "Ubuntu Mono", Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+	font-family: monospace;
 	color: inherit;
 	text-shadow: none;
 }
@@ -341,7 +336,6 @@
 	border: 0;
 	vertical-align: top;
 }
-.col pre,
 .col.span_2 table td,
 .col.span_3 table td,
 .col.span_4 table td,
@@ -848,7 +842,7 @@
 }
 .col .highlight {
 	font-weight: bolder;
-	color: #299CD9;
+	color: #E74C3C;
 }
 .col .fade {
 	opacity: 1;

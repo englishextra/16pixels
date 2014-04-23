@@ -1,7 +1,11 @@
 # 16pixels
 
-> CSS rules for consistent 16px based typography
-> <http://englishextra.github.io/libs/16pixels/>
+**16pixels.css** is a set of CSS rules to ensure consistent 16 pixels
+based typography. Pixels are used for font sizes and line heights, as
+well as for paddings and margins. Wrap your HTML content with class
+**.col** and you are done.
+
+<http://englishextra.github.io/libs/16pixels/>
 
 ## Usage
 
@@ -9,8 +13,8 @@
     <html lang="en">
         <head>
             <meta charset="utf-8" />
-            <title>16pixels Typography CSS Demo Page</title>
-            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,cyrillic" />
+            <title></title>
+            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,latin-ext,cyrillic" />
             <link rel="stylesheet" href="//cdn.jsdelivr.net/16pixels/0.1/16pixels.min.css" />
         </head>
         <body>
@@ -25,4 +29,6 @@
 
 ## Copyright
 
-Copyright (c) 2006-2014 Serguei Shimansky, <englishextra@yandex.ru>
+© [englishextra.github.com][], 2014
+
+  [englishextra.github.com]: http://englishextra.github.com/

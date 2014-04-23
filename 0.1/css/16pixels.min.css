@@ -430,7 +430,7 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 8px 1em;
+	padding: 8px 16px;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;

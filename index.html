@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale =1.0, user-scalable= no" />
-		<title>16pixels Typography CSS Demo Page</title>
+		<title>16pixels Demo Page</title>
 		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic%7CUbuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,latin-ext,cyrillic" /> -->
 		<link rel="stylesheet" href="fonts/open-sans-fontfacekit/300-400-400italic-600-600italic.css" />
 		<link rel="stylesheet" href="fonts/ubuntu-mono-fontfacekit/400-400italic-700-700italic.css" />
 		<link rel="stylesheet" href="fonts/voces-fontfacekit/400.css" />
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" /> -->
+		<link rel="stylesheet" href="libs/meyer-reset/2.0/css/reset.min.css" />
+		<link rel="stylesheet" href="libs/google-code-prettify/css/custom.css" />
+		<link rel="stylesheet" href="libs/UItoTop-jQuery-Plugin/1.2/css/custom.css" />
 		<link rel="stylesheet" href="0.1/css/16pixels.min.css" />
 		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css" /> -->
 		<style>
@@ -101,150 +104,129 @@ font-smoothing: antialiased;
 .col .phonetic {
 	font-family: Voces, Calibri, Judson, ConstructiumRegular !important;
 }
+.navbutton_holder {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 25px;
+	left: 16px;
+	font-size: 0;
+}
+.navbutton {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: transparent url(img/navbutton-50x50.svg) left top no-repeat;
+	background-size: 50px 50px;
+	cursor: pointer;
+}
+.no-svg .navbutton {
+	background: transparent url(img/navbutton-50x50.png) left top no-repeat;
+	background-size: 50px 50px;
+}
+.dropdownmenu_holder {
+	display: none;
+	position: absolute;
+	top: 77px;
+	left: 59px;
+	font-family: Open Sans, sans-serif;
+	font-size: 0;
+	color: #FFF;
+	background: #575757;
+	/*opacity: 0.92;*/
+	-webkit-box-shadow: 3px 3px 3px 0 #484848;
+	box-shadow: 3px 3px 3px 0 #484848;
+}
+.box {
+	background-color: #575757;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.box:after {
+	content: "";
+	display: block;
+	border-width: 10px 10px 0;
+	border-style: solid;
+	border-color: #575757 transparent transparent;
+	margin-left: -10px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+}
+.box.arrow-top-left:after {
+	border-width: 5px;
+	margin: 0;
+}
+.box.arrow-top-left:after {
+	border-top-color: transparent;
+	border-bottom-color: #575757;
+	top: -10px;
+	bottom: auto;
+}
+.box.arrow-top-left:after {
+	border-width: 5px;
+	border-left-color: #575757;
+}
+.box.arrow-top-left:after {
+	left: 0;
+	right: auto;
+}
+.box.arrow-top-left {
+	border-top-left-radius: 0;
+}
+.box.red {
+	background-color: #575757;
+}
+.box.red.arrow-top-left:after {
+	border-bottom-color: #575757;
+}
+.box.red.arrow-top-left:after {
+	border-left-color: #575757;
+}
+.dropdownmenu {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.875rem;
+	padding: 0.500rem 1rem;
+}
+.dropdownmenu li {
+	line-height: 1.500;
+}
+.dropdownmenu li a:before {
+	content:"\2022\00a0\00a0";
+}
+.dropdownmenu li a:hover,
+.dropdownmenu li a:active,
+.dropdownmenu li a:focus {
+	color: #E74C3C;
+}
 .container {
 	max-width: 720px;
 	padding: 40px 16px;
 	margin: 0 auto;
 }
-/*!
- * ui.totop.min.css
- * pastebin.com/9F7UKvTz
- */
-#toTop {
-	width: 50px;
-	height: 50px;
-	display: none;
-	position: fixed;
-	bottom: 25px;
-	right: 16px;
-	overflow: hidden;
-	text-decoration: none;
-	text-indent: 100%;
-	background: transparent url(img/totop-50x50.svg) top left no-repeat;
-	background-size: 50px 50px;
-	border: none;
-	outline: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.no-svg #toTop {
-	background: transparent url(img/totop-50x50.png) top left no-repeat;
-	background-size: 50px 50px;
-}
-#toTopHover {
-	width: 50px;
-	height: 50px;
-	float: left;
-	display: block;
-	overflow: hidden;
-	background: transparent url(img/totop-50x50.svg) top left no-repeat;
-	background-size: 50px 50px;
-}
-.no-svg #toTopHover {
-	background: transparent url(img/totop-50x50.png) top left no-repeat;
-	background-size: 50px 50px;
-}
-#toTop:hover {
-	opacity: 0.5 !important;
-}
-/*!
-* tomorrow-night-eighties.fixed.min.css
-*/
-pre.prettyprint {
-	background: #404445 !important;
-	border: 0px solid transparent !important;
-}
-.pln {
-	color: #CCC;
-}
-@media screen {
-	.str {
-		color: #99CC99;
-	}
-	.kwd {
-		color: #CC99CC;
-	}
-	.com {
-		color: #999999;
-	}
-	.typ {
-		color: #6699CC;
-	}
-	.lit {
-		color: #F99157;
-	}
-	.pun {
-		color: #CCC;
-	}
-	.opn {
-		color: #CCC;
-	}
-	.clo {
-		color: #CCC;
-	}
-	.tag {
-		color: #F2777A;
-	}
-	.atn {
-		color: #F99157;
-	}
-	.atv {
-		color: #66CCCC;
-	}
-	.dec {
-		color: #F99157;
-	}
-	.var {
-		color: #F2777A;
-	}
-	.fun {
-		color: #6699CC;
-	}
-}
-@media print, projection {
-	.str {
-		color: #006600;
-	}
-	.kwd {
-		color: #006;
-		font-weight: bold;
-	}
-	.com {
-		color: #600;
-		font-style: italic;
-	}
-	.typ {
-		color: #404;
-		font-weight: bold;
-	}
-	.lit {
-		color: #004444;
-	}
-	.pun, .opn, .clo {
-		color: #444400;
-	}
-	.tag {
-		color: #006;
-		font-weight: bold;
-	}
-	.atn {
-		color: #440044;
-	}
-	.atv {
-		color: #006600;
-	}
-}
-ol.linenums {
-	margin-top: 0;
-	margin-bottom: 0;
-}
 		</style>
-		<script src="http://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<!-- <script src="http://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+		<script src="libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="http://cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 		<![endif]-->
 	</head>
 	<body>
+		<div class="navbutton_holder"><span class="navbutton" id="navbutton" title="Содержание"></span></div>
+		<div class="dropdownmenu_holder box red arrow-top-left" id="dropdownmenu_holder">
+			<ul class="dropdownmenu" id="dropdownmenu">
+				<li><a href="#h1">Heading&#160;1</a></li>
+				<li><a href="#h2">Heading&#160;2</a></li>
+				<li><a href="#h3">Heading&#160;3</a></li>
+				<li><a href="#h4">Heading&#160;4</a></li>
+				<li><a href="#h5">Heading&#160;5</a></li>
+				<li><a href="#h6">Heading&#160;6</a></li>
+			</ul>
+		</div>
 		<div id="page" role="document">
 			<div class="container" role="main">
 				<div class="col">
@@ -260,7 +242,7 @@ ol.linenums {
 					<blockquote>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</blockquote>
-					<h2>Heading&#160;2</h2>
+					<h2 id="h2">Heading&#160;2</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -308,7 +290,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h3>Heading&#160;3</h3>
+					<h3 id="h3">Heading&#160;3</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -335,7 +317,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h4>Heading&#160;4</h4>
+					<h4 id="h4">Heading&#160;4</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -353,7 +335,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h5>Heading&#160;5</h5>
+					<h5 id="h5">Heading&#160;5</h5>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -371,7 +353,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h6>Heading&#160;6</h6>
+					<h6 id="h6">Heading&#160;6</h6>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -414,9 +396,15 @@ ol.linenums {
 			</div>
 			<a href="https://github.com/englishextra/16pixels"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/github_badge_top_right.png" alt="Fork me on GitHub" data-canonical-src="img/github_badge_top_right.png"></a>
 		</div>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+		<script src="libs/modernizr/custom/82780/js/modernizr.min.js"></script>
+		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script> -->
+		<script src="libs/google-code-prettify/js/prettify.min.js"></script>
 		<script>
 			(function(a){a&&prettyPrint()}(window.prettyPrint));
+			function addEvent(a,b,c){if(a.addEventListener)a.addEventListener(b,c,!1);else{c.$$guid||(c.$$guid=addEvent.guid++);a.events||(a.events={});var d=a.events[b];d||(d=a.events[b]={},a["on"+b]&&(d[0]=a["on"+b]));d[c.$$guid]=c;a["on"+b]=handleEvent}}addEvent.guid=1;function removeEvent(a,b,c){a.removeEventListener?a.removeEventListener(b,c,!1):a.events&&a.events[b]&&delete a.events[b][c.$$guid]} function handleEvent(a){var b=!0;a=a||fixEvent(((this.ownerDocument||this.document||this).parentWindow||window).event);var c=this.events[a.type],d;for(d in c)this.$$handleEvent=c[d],!1===this.$$handleEvent(a)&&(b=!1);return b}function fixEvent(a){a.preventDefault=fixEvent.preventDefault;a.stopPropagation=fixEvent.stopPropagation;return a}fixEvent.preventDefault=function(){this.returnValue=!1};fixEvent.stopPropagation=function(){this.cancelBubble=!0};
+			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"},!1)})(document.getElementById("page")||"",document.getElementById("dropdownmenu_holder")||"");
+			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"==a.style.display||""==a.style.display?"inline-block":"none"},!1)})(document.getElementById("navbutton")||"",document.getElementById("dropdownmenu_holder")||"");
+			(function(c,e){c&&e&&function(a){a=a.getElementsByTagName("li");for(var b=0;b<a.length;b++)d=a[b],addEvent(d,"click",function(){c.setAttribute("style","display:none;")},!1)}(e)})(document.getElementById("dropdownmenu_holder")||"",document.getElementById("dropdownmenu")||"");
 			(function(e,f,a,h){b=document.createElement("a");b.setAttribute("style","display:none;");b.setAttribute("href","#");b.setAttribute("id","toTop");b.setAttribute("onclick","function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};scrollTop2(15);return false;");c=document.createElement("span");c.setAttribute("id","toTopHover");b.appendChild(c);d=document.createTextNode("\u041d\u0430\u0432\u0435\u0440\u0445"); b.appendChild(d);e.appendChild(b);f.onscroll=function(){var e=f.pageYOffset||a.documentElement.scrollTop||a.body.scrollTop,k=f.innerHeight||a.documentElement.clientHeight||a.body.clientHeight,g=a.getElementById(h)||"";g&&(e>k?g.style.display="inline":g.style.display="none")}})(document.getElementsByTagName("body")[0]||document.documentElement,window,document,"toTop");
 		</script>
 	</body>

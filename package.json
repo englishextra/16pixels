@@ -1,0 +1,16 @@
+{
+	"name": "16pixels",
+	"version": "0.1.4",
+	"description": "16pixels as a node packaged module",
+	"style": "16pixels.min.css",
+	"files": ["LICENSE.md",
+	"16pixels.min.css"],
+	"homepage": "http://englishextra.github.io/libs/16pixels",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/englishextra/16pixels.git"
+	},
+	"main": "16pixels.min.css",
+	"author": "englishextra",
+	"license": "MIT"
+}

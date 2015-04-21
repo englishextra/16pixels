@@ -11,5 +11,6 @@
 	"cdn/16pixels/latest/css/16pixels.css",
 	"bower.json",
 	"gruntfile.js",
+	"component.json",
 	"package.json"]
 }

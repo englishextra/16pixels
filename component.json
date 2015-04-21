@@ -2,7 +2,7 @@
 	"name": "16pixels",
 	"repo": "englishextra/16pixels",
 	"version": "0.1.4",
-	"styles": ["16pixels.min.css"],
+	"styles": ["cdn/16pixels/latest/css/16pixels.min.css"],
 	"author": "englishextra",
 	"license": "MIT"
 }

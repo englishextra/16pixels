@@ -5,3 +5,7 @@
 * Remove unnecessary rules used for gridpak users.
 * Add rules for previously uncovered input element types.
 * Change appearance of form elements.
+
+=== 0.1.5 (April 19, 2015)
+
+* Fixed HR, SMALL.

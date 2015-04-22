@@ -234,8 +234,9 @@
 	padding: 5px 16px;
 	vertical-align: top;
 }
-.col pre {
-	font-size: 13px;
+.col pre,
+.col pre code {
+	font-size: 15px;
 	line-height: 1.500;
 }
 .col table th a:hover,

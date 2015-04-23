@@ -428,6 +428,7 @@
 .col div+address,
 .col h1+blockquote,
 .col h1+div,
+.col h1+hr,
 .col h1+div.hr,
 .col h1+dl,
 .col h1+ol,
@@ -681,7 +682,7 @@
 .col .hr {
 	height: 1px;
 	padding: 0;
-	margin: 24px 0 0;
+	margin: 24px 0;
 }
 /*!
  * font weights

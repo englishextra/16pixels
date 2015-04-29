@@ -1,5 +1,5 @@
 /*!
- * 16pixels v0.1.4
+ * 16pixels v0.1.5
  * github.com/englishextra/16pixels
  */
 .col div,
@@ -186,13 +186,11 @@
 .col dl dt,
 .col dl dd,
 .col ul li,
-.col ol li,
-.col details li {
+.col ol li {
 	font-size: 16px;
 	line-height: 1.500;
 }
-.col ul,
-.col details {
+.col ul {
 	list-style: disc outside;
 }
 .col ol {
@@ -332,8 +330,7 @@
 }
 .col ul,
 .col ol,
-.col dl,
-.col details {
+.col dl {
 	margin-left: auto;
 }
 .col dl dd:before {
@@ -352,8 +349,7 @@
 .col .indent {
 	text-indent: 24px;
 }
-.col ul,
-.col details {
+.col ul {
 	padding-left: 40px;
 }
 .col td ul {
@@ -384,7 +380,6 @@
 .col select,
 .col textarea,
 .col ul li,
-.col details li,
 .col table td ol,
 .col table td ul,
 .col table td dl {
@@ -736,7 +731,6 @@
 .col p.blockquote,
 .col dl dd,
 .col ul li,
-.col details li,
 .col ol li,
 .col table td,
 .col caption,

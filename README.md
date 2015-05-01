@@ -1,6 +1,6 @@
 # 16pixels
 
-[![Project Status](https://stillmaintained.com/englishextra/16pixels.png)](https://stillmaintained.com/englishextra/16pixels)
+![Project Status](https://stillmaintained.com/englishextra/16pixels.png "Project Status")
 
 **16pixels.css** is a set of CSS rules to ensure consistent 16 pixels
 based typography. Pixels are used for font sizes and line heights, as

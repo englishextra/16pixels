@@ -5,6 +5,8 @@ based typography. Pixels are used for font sizes and line heights, as
 well as for paddings and margins. Wrap your HTML content with class
 **.col** and you are done.
 
+![](https://github.com/englishextra/16pixels/raw/master/img/16pixels-logo-36D7B7-935x230.png)
+
 <https://englishextra.github.io/libs/16pixels/>
 
 ## Usage

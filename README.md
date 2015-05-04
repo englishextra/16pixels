@@ -1,13 +1,16 @@
 # 16pixels
 
-**16pixels.css** is a set of CSS rules to ensure consistent 16 pixels
-based typography. Pixels are used for font sizes and line heights, as
-well as for paddings and margins. Wrap your HTML content with class
-**.col** and you are done.
+**16pixels.css** is a set of CSS rules to ensure consistent 16 pixels based typography. Pixels are used for font sizes and line heights, as well as for paddings and margins. Wrap your HTML content with class **.col** and you are done.
 
-![](https://github.com/englishextra/16pixels/raw/master/img/16pixels-logo-36D7B7-935x230.png)
+[![16pixels](https://github.com/englishextra/16pixels/raw/master/img/16pixels-logo-36D7B7-935x230.png)](https://englishextra.github.io/libs/16pixels/)
 
-<https://englishextra.github.io/libs/16pixels/>
+## npm Install
+
+    npm install 16pixels
+
+## bower Install
+
+    bower install 16pixels
 
 ## Usage
 

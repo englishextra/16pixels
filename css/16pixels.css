@@ -1,4 +1,4 @@
-/*!
+/**
  * 16pixels v0.1.6
  * github.com/englishextra/16pixels
  */
@@ -712,7 +712,7 @@
 	padding: 0;
 	margin: 24px 0;
 }
-/*!
+/**
  * font weights
  */
 .col h1,
@@ -761,7 +761,7 @@
 .col .highlight {
 	font-weight: bolder;
 }
-/*!
+/**
  * font styles
  */
 .col address,
@@ -775,7 +775,7 @@
 .col .italic {
 	font-style: italic;
 }
-/*!
+/**
  * font families
  */
 .col h1 {
@@ -819,7 +819,7 @@
 .col .phonetic {
 	font-family: "Source Code Pro","Consolas",monospace;
 }
-/*!
+/**
  * colors
  */
 .col a {

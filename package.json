@@ -7,12 +7,23 @@
 	"index.html",
 	"css/16pixels.css",
 	"css/16pixels.min.css"],
-	"homepage": "https://englishextra.github.io/libs/16pixels/",
+	"main": "css/16pixels.min.css",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/englishextra/16pixels.git"
 	},
-	"main": "css/16pixels.min.css",
-	"author": "englishextra",
-	"license": "MIT"
+	"email": "englishextra@mail.ru",
+	"url": "https://github.com/englishextra/16pixels/issues",
+	"homepage": "https://englishextra.github.io/libs/16pixels/",
+	"maintainers": {
+		"name": "Serguei Shimansky",
+		"email": "englishextra@mail.ru",
+		"url": "https://github.com/englishextra"
+	},
+	"author": {
+		"name": "Serguei Shimansky",
+		"email": "englishextra@mail.ru",
+		"url": "https://github.com/englishextra"
+	},
+	"license": "(MIT)"
 }

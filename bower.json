@@ -1,10 +1,9 @@
 {
 	"name": "16pixels",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"main": "css/16pixels.min.css",
 	"author": "englishextra",
-	"ignore": ["img",".URL",
-	".md",
+	"ignore": ["img",".md",
 	"update.json",
 	"bower.json",
 	"gruntfile.js",

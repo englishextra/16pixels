@@ -1,6 +1,6 @@
 {
 	"name": "16pixels",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "16pixels as a node packaged module",
 	"style": "css/16pixels.min.css",
 	"files": ["LICENSE.md",

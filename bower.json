@@ -1,7 +1,7 @@
 {
 	"name": "16pixels",
 	"version": "0.1.8",
-	"main": "css/16pixels.min.css",
+	"main": "css/16pixels.css",
 	"author": "englishextra",
 	"ignore": ["img",".md",
 	"update.json",

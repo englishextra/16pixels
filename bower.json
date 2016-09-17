@@ -1,6 +1,6 @@
 {
 	"name": "16pixels",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"main": "css/16pixels.min.css",
 	"author": "englishextra",
 	"ignore": ["img",".md",

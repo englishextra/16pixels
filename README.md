@@ -6,6 +6,8 @@
 
 [![16pixels](https://github.com/englishextra/16pixels/raw/master/img/16pixels-logo-36D7B7-935x230.png)](https://englishextra.github.io/libs/16pixels/)
 
+[![CDNJS](https://img.shields.io/cdnjs/v/16pixels.svg)](https://cdnjs.com/libraries/16pixels)
+
 ## npm Install
 
     npm install 16pixels

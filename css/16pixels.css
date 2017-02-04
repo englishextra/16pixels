@@ -1,8 +1,10 @@
 /*! @import "16pixels"; */
+
 /*!
- * 16pixels v0.1.8
+ * 16pixels v0.1.9
  * github.com/englishextra/16pixels
  */
+
 .col div,
 .col span,
 .col applet,
@@ -163,7 +165,7 @@
 }
 
 .col h4 {
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 1.200;
 	font-variant: small-caps;
 	letter-spacing: 1px;
@@ -175,8 +177,7 @@
 	padding: 0;
 }
 
-.col h6,
-.col dl dt {
+.col h6 {
 	text-decoration: underline;
 	padding: 0;
 }
@@ -191,7 +192,9 @@
 .col label,
 .col p.smaller,
 .col table td,
-.col table th {
+.col table th,
+.col pre,
+.col pre code {
 	font-size: 14px;
 	line-height: 1.500;
 }
@@ -221,6 +224,7 @@
 }
 
 .col pre {
+	font-size: 16px;
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: inherit;
@@ -260,12 +264,6 @@
 .col table th {
 	padding: 5px 10px;
 	vertical-align: top;
-}
-
-.col pre,
-.col pre code {
-	font-size: 14px;
-	line-height: 1.500;
 }
 
 .col table th a:hover,
@@ -312,6 +310,7 @@
 
 .col optgroup {
 	margin: 3px;
+	padding-left: 3px;
 }
 
 .col input[type="color"] {
@@ -755,6 +754,7 @@
 
 .col .fade {
 	opacity: 1;
+	-webkit-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
 }
 
@@ -772,6 +772,7 @@
 /**
  * font weights
  */
+
 .col h1,
 .col h2,
 .col h4,
@@ -809,6 +810,7 @@
 .col h3,
 .col a,
 .col table th,
+.col dl dt,
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
@@ -823,6 +825,7 @@
 /**
  * font styles
  */
+
 .col address,
 .col p.address,
 .col p.blockquote,
@@ -835,9 +838,14 @@
 	font-style: italic;
 }
 
+.col optgroup {
+	font-style: normal;
+}
+
 /**
  * font families
  */
+
 .col h1 {
 	font-family: serif;
 }
@@ -848,16 +856,13 @@
 }
 
 .col select {
-	font-family: inherit;
+	font-family: sans-serif;
 }
 
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
-.col input[type="submit"] {
-	font-family: inherit;
-}
-
+.col input[type="submit"],
 .col input[type^="text"],
 .col input[type^="search"],
 .col input[type^="email"],
@@ -872,10 +877,7 @@
 .col input[type^="time"],
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
-.col textarea {
-	font-family: inherit;
-}
-
+.col textarea,
 .col caption,
 .col table th,
 .col table td {
@@ -889,6 +891,7 @@
 /**
  * colors
  */
+
 .col a {
 	color: #307CCA;
 }
@@ -978,11 +981,7 @@
 	color: inherit;
 }
 
-.col select {
-	background-color: #FFFFFF;
-	border: 1px solid #C3C3C3;
-}
-
+.col select,
 .col input[type^="text"],
 .col input[type^="search"],
 .col input[type^="email"],
@@ -1028,6 +1027,8 @@
 	border: 1px solid #474747;
 }
 
+.col select:hover,
+.col select:focus,
 .col input[type^="text"]:focus,
 .col input[type^="search"]:focus,
 .col input[type^="email"]:focus,
@@ -1043,6 +1044,7 @@
 .col input[type^="datetime"]:focus,
 .col input[type^="datetime-local"]:focus,
 .col textarea:focus,
+.col select:active,
 .col input[type^="text"]:active,
 .col input[type^="search"]:active,
 .col input[type^="email"]:active,
@@ -1058,17 +1060,6 @@
 .col input[type^="datetime"]:active,
 .col input[type^="datetime-local"]:active,
 .col textarea:active {
-	background: #F2F2F2;
-	border: 1px solid #C3C3C3;
-}
-
-.col select:hover {
-	background: #F2F2F2;
-	border: 1px solid #C3C3C3;
-}
-
-.col select:active,
-.col select:focus {
 	background: #F2F2F2;
 	border: 1px solid #C3C3C3;
 }

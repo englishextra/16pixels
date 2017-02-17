@@ -12,30 +12,36 @@
 
 ## npm Install
 
-    npm install 16pixels
+```
+npm install 16pixels
+```
 
 ## bower Install
 
-    bower install 16pixels
+```
+bower install 16pixels
+```
 
 ## Usage
 
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8" />
-            <title></title>
-            <link rel="stylesheet" href="16pixels.min.css" />
-        </head>
-        <body>
-            <div class="col">
-                <h1>Heading&#160;1</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                </p>
-            </div>
-        </body>
-    </html>
+```
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="16pixels.min.css" />
+	</head>
+	<body>
+		<div class="col">
+			<h1>Heading&#160;1</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+			</p>
+		</div>
+	</body>
+</html>
+```
 
 ## Copyright
 

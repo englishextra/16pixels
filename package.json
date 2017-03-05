@@ -1,29 +1,29 @@
 {
-	"name": "16pixels",
-	"version": "0.1.9",
-	"description": "16pixels as a node packaged module",
-	"style": "css/16pixels.min.css",
-	"files": ["LICENSE.md",
-	"index.html",
-	"css/16pixels.css",
-	"css/16pixels.min.css"],
-	"main": "css/16pixels.min.css",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/englishextra/16pixels.git"
-	},
-	"email": "englishextra@mail.ru",
-	"url": "https://github.com/englishextra/16pixels/issues",
-	"homepage": "https://englishextra.github.io/libs/16pixels/",
-	"maintainers": {
-		"name": "Serguei Shimansky",
-		"email": "englishextra@mail.ru",
-		"url": "https://github.com/englishextra"
-	},
-	"author": {
-		"name": "Serguei Shimansky",
-		"email": "englishextra@mail.ru",
-		"url": "https://github.com/englishextra"
-	},
-	"license": "(MIT)"
+  "name": "16pixels",
+  "version": "0.1.9",
+  "description": "16pixels.css is a set of CSS rules to ensure consistent 16 pixels based typography. No dependencies. Pixels are used for font sizes and line heights, as well as for paddings and margins. Wrap your HTML content with class .col and you are done.",
+  "style": "css/16pixels.min.css",
+  "files": ["LICENSE.md",
+  "index.html",
+  "css/16pixels.css",
+  "css/16pixels.min.css"],
+  "main": "css/16pixels.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/englishextra/16pixels.git"
+  },
+  "email": "englishextra@mail.ru",
+  "url": "https://github.com/englishextra/16pixels/issues",
+  "homepage": "https://englishextra.github.io/libs/16pixels/",
+  "maintainers": {
+    "name": "Serguei Shimansky",
+    "email": "englishextra@mail.ru",
+    "url": "https://github.com/englishextra"
+  },
+  "author": {
+    "name": "Serguei Shimansky",
+    "email": "englishextra@mail.ru",
+    "url": "https://github.com/englishextra"
+  },
+  "license": "(MIT)"
 }

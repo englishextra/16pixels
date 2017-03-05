@@ -3,6 +3,7 @@
 /*!
  * 16pixels v0.1.9
  * github.com/englishextra/16pixels
+ * set html font to 16px, and body to 1.000rem
  */
 
 .col div,
@@ -138,7 +139,7 @@
 .col address,
 .col p.address {
 	font-size: 13px;
-	line-height: 1.500;
+	line-height: 20px;
 	margin-right: 0;
 }
 
@@ -147,45 +148,43 @@
 }
 
 .col h1 {
-	font-size: 54px;
-	line-height: 1.200;
+	font-size: 50px;
+	line-height: 56px;
 	padding: 0;
 }
 
 .col h2 {
-	font-size: 25px;
-	line-height: 1.200;
+	font-size: 26px;
+	line-height: 32px;
 	padding: 0;
 }
 
 .col h3 {
-	font-size: 19px;
-	line-height: 1.200;
+	font-size: 22px;
+	line-height: 24px;
 	padding: 0;
 }
 
 .col h4 {
-	font-size: 18px;
-	line-height: 1.200;
+	font-size: 20px;
+	line-height: 24px;
 	font-variant: small-caps;
 	letter-spacing: 1px;
 	padding: 0;
 }
 
 .col h5 {
+	font-size: 18px;
+	line-height: 20px;
 	text-transform: uppercase;
 	padding: 0;
 }
 
 .col h6 {
+	font-size: 16px;
+	line-height: 20px;
 	text-decoration: underline;
 	padding: 0;
-}
-
-.col h5,
-.col h6 {
-	font-size: 16px;
-	line-height: 1.200;
 }
 
 .col caption,
@@ -196,13 +195,13 @@
 .col pre,
 .col pre code {
 	font-size: 14px;
-	line-height: 1.500;
+	line-height: 24px;
 }
 
 .col p.larger,
 .col blockquote {
 	font-size: 18px;
-	line-height: 1.500;
+	line-height: 24px;
 }
 
 .col p,
@@ -212,7 +211,7 @@
 .col ul li,
 .col ol li {
 	font-size: 16px;
-	line-height: 1.500;
+	line-height: 24px;
 }
 
 .col ul {
@@ -295,7 +294,7 @@
 .col select,
 .col textarea {
 	font-size: 14px;
-	line-height: 1.500;
+	line-height: 24px;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -344,7 +343,7 @@
 .col input[type="reset"],
 .col input[type="submit"] {
 	font-size: 14px;
-	line-height: 1.500;
+	line-height: 24px;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -773,7 +772,6 @@
  * font weights
  */
 
-.col h1,
 .col h2,
 .col h4,
 .col h5,
@@ -807,8 +805,11 @@
 	font-weight: normal;
 }
 
+.col h1 {
+	font-weight: lighter;
+}
+
 .col h3,
-.col a,
 .col table th,
 .col dl dt,
 .col button,
@@ -847,7 +848,7 @@
  */
 
 .col h1 {
-	font-family: serif;
+	font-family: inherit;
 }
 
 .col pre,

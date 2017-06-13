@@ -2,6 +2,7 @@
 
 **16pixels.css** is a set of CSS rules to ensure consistent 16 pixels based typography. Pixels are used for font sizes and line heights, as well as for paddings and margins. Can be used as typography normalizer. No dependencies. Wrap your HTML content with class **.col** and you are done.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0de605fc9397497895508d26e3bdbae2)](https://www.codacy.com/app/englishextra/16pixels?utm_source=github.com&utm_medium=referral&utm_content=englishextra/16pixels&utm_campaign=badger)
 [![NPM](https://nodei.co/npm/16pixels.png?downloads=true)](https://nodei.co/npm/16pixels/)
 
 [![npm](https://img.shields.io/npm/v/16pixels.svg)](https://github.com/englishextra/16pixels)

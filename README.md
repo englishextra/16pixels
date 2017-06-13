@@ -7,7 +7,6 @@
 [![npm](https://img.shields.io/npm/v/16pixels.svg)](https://github.com/englishextra/16pixels)
 [![Bower](https://img.shields.io/bower/v/16pixels.svg)](https://github.com/englishextra/16pixels)
 [![CDNJS](https://img.shields.io/cdnjs/v/16pixels.svg)](https://cdnjs.com/libraries/16pixels)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0de605fc9397497895508d26e3bdbae2)](https://www.codacy.com/app/englishextra/16pixels)
 
 [![16pixels](https://github.com/englishextra/16pixels/raw/master/img/16pixels-logo-36D7B7-935x230.png)](https://englishextra.github.io/libs/16pixels/)
 

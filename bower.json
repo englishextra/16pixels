@@ -1,12 +1,12 @@
 {
-  "name": "16pixels",
-  "version": "0.1.9",
-  "main": "css/16pixels.css",
-  "author": "englishextra",
-  "ignore": ["img",".md",
-  "update.json",
-  "bower.json",
-  "gruntfile.js",
-  "component.json",
-  "package.json"]
+	"name": "16pixels",
+	"version": "0.1.9",
+	"main": "css/16pixels.css",
+	"author": "englishextra",
+	"ignore": ["img",".md",
+	"update.json",
+	"bower.json",
+	"gruntfile.js",
+	"component.json",
+	"package.json"]
 }

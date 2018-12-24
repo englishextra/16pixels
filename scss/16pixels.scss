@@ -4,6 +4,7 @@
  * set html font to 16px, and body to 16px
  * line height should be the closest multiple of 4
  */
+
 html {
 	font-size: 16px;
 	line-height: 24px;
@@ -237,10 +238,7 @@ body {
 	overflow: -moz-scrollbars-horizontal;
 	overflow-x: auto;
 	border: 0;
-	-webkit-box-shadow: none;
 	box-shadow: none;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
 	tab-size: 4;
 	padding: 16px 20px;
 }
@@ -297,7 +295,6 @@ body {
 .col textarea {
 	font-size: 14px;
 	line-height: 20px;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -347,7 +344,6 @@ body {
 .col input[type="submit"] {
 	font-size: 14px;
 	line-height: 20px;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -397,21 +393,21 @@ body {
 }
 
 .col td ul {
-	margin-top: 0;
+	margin-top: 0 /* !important */;
 }
 
 .col td ul li {
-	font-size: inherit;
-	line-height: inherit;
+	font-size: inherit /* !important */;
+	line-height: inherit /* !important */;
 }
 
 .col td ol {
-	margin-top: 0;
+	margin-top: 0 /* !important */;
 }
 
 .col td ol li {
-	font-size: inherit;
-	line-height: inherit;
+	font-size: inherit /* !important */;
+	line-height: inherit /* !important */;
 }
 
 .col.textcenter address,
@@ -765,6 +761,7 @@ body {
 /**
  * font weights
  */
+
 .col h2,
 .col h4,
 .col h5,
@@ -819,6 +816,7 @@ body {
 /**
  * font styles
  */
+
 .col address,
 .col p.address,
 .col p.blockquote,
@@ -838,18 +836,18 @@ body {
 /**
  * font families
  */
+
 .col body {
-	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue", "Roboto",
-		"Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif;
+	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue", "Roboto", "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif;
 }
 
 /* .col h1 {
 	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue-Light", "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif-light, sans-serif;
 } */
+
 .col pre,
 .col pre code {
-	font-family: "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata",
-		"Source Code Pro", monospace;
+	font-family: "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata", "Source Code Pro", monospace;
 }
 
 .col select {
@@ -882,21 +880,21 @@ body {
 }
 
 .col .phonetic {
-	font-family: "Roboto Mono", "Consolas", "Monaco", "Droid Sans Mono",
-		"Inconsolata", "Source Code Pro", monospace;
+	font-family: "Roboto Mono", "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata", "Source Code Pro", monospace;
 }
 
 /**
  * colors
  */
+
 .col a {
-	color: #3585d8;
+	color: #3585D8;
 }
 
 .col a:focus,
 .col a:hover,
 .col a:active {
-	color: #3585d8;
+	color: #3585D8;
 }
 
 .col h1,
@@ -969,7 +967,7 @@ body {
 
 .col pre {
 	color: inherit;
-	background-color: #f3f3f3;
+	background-color: #F3F3F3;
 }
 
 .col pre a:focus,
@@ -994,8 +992,8 @@ body {
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col textarea {
-	background-color: #ffffff;
-	border: 1px solid #c3c3c3;
+	background-color: #FFFFFF;
+	border: 1px solid #C3C3C3;
 }
 
 .col button:focus,
@@ -1010,16 +1008,16 @@ body {
 .col input[type="button"]:active,
 .col input[type="reset"]:active,
 .col input[type="submit"]:active {
-	color: #ffffff;
-	background-color: #5f5f5f;
-	border: 1px solid #5f5f5f;
+	color: #FFFFFF;
+	background-color: #5F5F5F;
+	border: 1px solid #5F5F5F;
 }
 
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
-	color: #ffffff;
+	color: #FFFFFF;
 	background-color: #373737;
 	border: 1px solid #373737;
 }
@@ -1057,8 +1055,8 @@ body {
 .col input[type^="datetime"]:active,
 .col input[type^="datetime-local"]:active,
 .col textarea:active {
-	background-color: #f3f3f3;
-	border: 1px solid #c3c3c3;
+	background-color: #F3F3F3;
+	border: 1px solid #C3C3C3;
 }
 
 .col select:disabled,
@@ -1077,43 +1075,43 @@ body {
 .col input[type^="datetime"]:disabled,
 .col input[type^="datetime-local"]:disabled,
 .col textarea:disabled {
-	background-color: #d5d5d5;
-	border-color: #d5d5d5;
+	background-color: #D5D5D5;
+	border-color: #D5D5D5;
 }
 
 .col button:disabled,
 .col input[type="button"]:disabled,
 .col input[type="reset"]:disabled,
 .col input[type="submit"]:disabled {
-	background-color: #d5d5d5;
-	border-color: #d5d5d5;
+	background-color: #D5D5D5;
+	border-color: #D5D5D5;
 }
 
 .col table {
 	border: none;
 	border-top-width: 1px;
 	border-top-style: solid;
-	border-top-color: #c3c3c3;
+	border-top-color: #C3C3C3;
 	border-right-width: 1px;
 	border-right-style: solid;
-	border-right-color: #c3c3c3;
+	border-right-color: #C3C3C3;
 	border-left-width: 1px;
 	border-left-style: solid;
-	border-left-color: #c3c3c3;
+	border-left-color: #C3C3C3;
 }
 
 .col table th {
 	border: none;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #c3c3c3;
+	border-bottom-color: #C3C3C3;
 }
 
 .col table td {
 	border: none;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #c3c3c3;
+	border-bottom-color: #C3C3C3;
 }
 
 .col img {
@@ -1123,10 +1121,10 @@ body {
 
 .col hr,
 .col .hr {
-	background-color: #c3c3c3;
+	background-color: #C3C3C3;
 	border: 0;
 }
 
 .col .highlight {
-	color: #d93d3d;
+	color: #D93D3D;
 }

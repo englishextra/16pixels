@@ -2,21 +2,17 @@
 	"name": "16pixels",
 	"version": "0.1.9",
 	"description": "16pixels.css is a set of CSS rules to ensure consistent 16 pixels based typography. Pixels are used for font sizes and line heights, as well as for paddings and margins. Can be used as typography normalizer. No dependencies. Wrap your HTML content with class .col and you are done.",
-	"keywords": [
-		"16pixels",
-		"typeface",
-		"font",
-		"css",
-		"grid",
-		"typography"
-	],
+	"keywords": ["16pixels",
+	"typeface",
+	"font",
+	"css",
+	"grid",
+	"typography"],
 	"style": "css/16pixels.min.css",
-	"files": [
-		"LICENSE.md",
-		"index.html",
-		"css/16pixels.css",
-		"css/16pixels.min.css"
-	],
+	"files": ["LICENSE.md",
+	"index.html",
+	"css/16pixels.css",
+	"css/16pixels.min.css"],
 	"main": "css/16pixels.min.css",
 	"filename": "css/16pixels.min.css",
 	"repository": {
@@ -26,14 +22,10 @@
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/16pixels.git",
-		"fileMap": [
-			{
-				"basePath": "",
-				"files": [
-					"css/16pixels*"
-				]
-			}
-		]
+		"fileMap": [{
+			"basePath": "",
+			"files": ["css/16pixels*"]
+		}]
 	},
 	"dependencies": {
 		"npm": "^6.5.0"

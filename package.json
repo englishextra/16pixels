@@ -15,8 +15,10 @@
 	"css/16pixels.min.css"],
 	"main": "css/16pixels.min.css",
 	"filename": "css/16pixels.min.css",
-	"main_file": "index.js",
-	"electronVersion": "4.0.0",
+	"main": "main.js",
+	"window": {
+		"icon": "favicon-32x32.png"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/englishextra/16pixels.git"

@@ -8,13 +8,6 @@
 	"css",
 	"grid",
 	"typography"],
-	"style": "css/16pixels.min.css",
-	"files": ["LICENSE.md",
-	"index.html",
-	"css/16pixels.css",
-	"css/16pixels.min.css"],
-	"main": "css/16pixels.min.css",
-	"filename": "css/16pixels.min.css",
 	"main": "main.js",
 	"window": {
 		"icon": "favicon-32x32.png"
@@ -23,6 +16,11 @@
 		"type": "git",
 		"url": "git://github.com/englishextra/16pixels.git"
 	},
+	"files": ["LICENSE.md",
+	"index.html",
+	"css/16pixels.css",
+	"css/16pixels.min.css"],
+	"filename": "css/16pixels.min.css",
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/16pixels.git",

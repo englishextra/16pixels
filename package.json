@@ -41,7 +41,7 @@
 		"npm": "^6.10.2"
 	},
 	"devDependencies": {
-		"browser-sync": "^2.26.7",
+		"browser-sync": "^2.26.12",
 		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "^6.0.0",
 		"gulp-clean-css": "^4.0.0",

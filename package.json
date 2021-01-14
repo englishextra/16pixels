@@ -1,6 +1,6 @@
 {
 	"name": "16pixels",
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/"
 	},

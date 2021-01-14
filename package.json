@@ -22,12 +22,9 @@
 		"url": "git://github.com/englishextra/16pixels.git"
 	},
 	"files": [
-		"LICENSE.md",
-		"index.html",
-		"css/16pixels.css",
-		"css/16pixels.min.css"
+		"css/16pixels.css"
 	],
-	"filename": "css/16pixels.min.css",
+	"filename": "css/16pixels.css",
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/16pixels.git",

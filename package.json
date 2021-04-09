@@ -10,14 +10,8 @@
 		"grid",
 		"typography"
 	],
-	"main": "main.js",
-	"window": {
-		"icon": "favicon-32x32.png"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/englishextra/16pixels.git"
-	},
+	"main": "css/16pixels.css",
+	"style": "css/16pixels.css",
 	"files": [
 		"index.html",
 		"css/16pixels.css"
@@ -26,14 +20,16 @@
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/16pixels.git",
-		"fileMap": [
-			{
-				"basePath": "",
-				"files": [
-					"css/16pixels*"
-				]
-			}
-		]
+		"fileMap": [{
+			"basePath": "",
+			"files": [
+				"css/16pixels*"
+			]
+		}]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/englishextra/16pixels.git"
 	},
 	"dependencies": {
 		"npm": "^7.3.0"

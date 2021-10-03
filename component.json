@@ -1,7 +1,7 @@
 {
 	"name": "16pixels",
 	"repo": "englishextra/16pixels",
-	"version": "0.1.12",
+	"version": "0.1.13",
 	"styles": ["css/16pixels.css"],
 	"author": "englishextra",
 	"license": "(MIT)"
